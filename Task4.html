@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="cs4.css">
+</head>
+<body>
+    <div class="container">
+        <div id="message" class="message"></div>
+        <div id="register" class="form-container">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="regUsername">Username:</label>
+                <input type="text" id="regUsername" required>
+                <label for="regPassword">Password:</label>
+                <input type="password" id="regPassword" required>
+                <button type="submit">Register</button>
+                <p>Already have an account? <span id="showLogin">Login here</span></p>
+            </form>
+        </div>
+        <div id="login" class="form-container" style="display: none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <span id="showRegister">Register here</span></p>
+            </form>
+        </div>
+        <div id="securedPage" class="secured-page" style="display: none;">
+            <h2>Welcome to the Secured Page</h2>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <script src="s4.js"></script>
+</body>
+</html>
+
